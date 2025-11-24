@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>La Bonne Table — Menu</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">La Bonne Table</h1>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="menu-intro">
+      <h2>Our Menu</h2>
+      <p>Seasonal selections — click a category to filter.</p>
+      <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="starters">Starters</button>
+        <button class="filter-btn" data-filter="mains">Mains</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+      </div>
+    </section>
+
+    <section class="menu-list" id="menuList">
+      <!-- items inserted by JS -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© La Bonne Table — All rights reserved</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
