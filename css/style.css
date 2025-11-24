@@ -1,0 +1,75 @@
+:root{
+    --accent:#c04b37;
+    --bg:#fff;--muted:#666
+}
+*{
+    box-sizing:border-box
+}
+body
+{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;
+    margin:0;background:var(--bg);color:#222
+}
+.container{
+    max-width:960px;
+    margin:0 auto;padding:20px
+}
+.site-header{
+    background:#faf0ec;
+    border-bottom:1px solid #eee
+}
+.site-header .container{
+    display:flex;align-items:center;
+    justify-content:space-between
+}
+.brand{
+    margin:0;color:var(--accent)
+}
+.nav-link{
+    margin-left:12px;color:#333;text-decoration:none
+}
+.hero{
+    padding:60px 20px;text-align:center
+}
+.hero h2{
+    font-size:2rem;margin:0 0 10px
+}
+.btn{
+    display:inline-block;background:var(--accent);
+    color:#fff;padding:10px 16px;border-radius:6px;
+    text-decoration:none
+}
+.about,.contact{
+    margin:30px 0
+}
+.menu-intro{
+    padding:20px 0
+}
+.filters{
+    margin-top:12px
+}
+.filter-btn{
+    background:#eee;
+    border:0;padding:8px 10px;
+    margin-right:8px;
+    border-radius:6px;
+    cursor:pointer}
+.menu-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:16px}
+.menu-item{
+    border:1px solid #eee;
+    padding:12px;
+    border-radius:8px;background:#fff}
+.menu-item h4
+{
+    margin:0 0 6px}
+.price{
+    float:right;color:var(--muted)
+}
+.site-footer{
+    background:#f8f8f8;
+    padding:12px 0;margin-top:30px;
+    text-align:center;color:#555}
+
+@media(max-width:600px){.hero{padding:32px}.site-header .container{flex-direction:column;gap:10px}.nav-link{margin-left:8px}}
